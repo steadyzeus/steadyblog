@@ -11,6 +11,7 @@ tags:
 }
 
 2.iOS 上拉边界下拉出现白色空白
+```javascript
 document.body.addEventListener('touchmove', function(e) {
     if(e._isScroller) return;
     // 阻止默认事件
@@ -18,7 +19,7 @@ document.body.addEventListener('touchmove', function(e) {
 }, {
     passive: false
 });
-
+```
 3.软键盘将页面顶起来、收起未回落问题
 表现
 Android 手机中，点击 input 框时，键盘弹出，将页面顶起来，导致页面样式错乱。
@@ -58,4 +59,3 @@ window.scrollTo(x-coord, y-coord)，其中window.scrollTo(0, clientHeight)恢复
 因为页面内部点击分享按钮无法直接调用，而分享功能需要点击右上角更多来操作。
 然后用户可能不知道通过右上角小标里面的功能分享。又想引导用户分享，这时应该怎么做呢？
 技术无法实现的，从产品出发。
-

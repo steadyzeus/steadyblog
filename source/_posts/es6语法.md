@@ -143,3 +143,21 @@ var abc=action.next().value;
 abc().then(function(data){console.log(data)});
 var firstObj=action.next(10);
 console.log(firstObj.value,firstObj)
+
+# promise 搭配 async function 
+
+```js
+var callbackResolve=()=>{};
+
+async function redireact() {
+
+  await new Promise((resolve)=>{
+
+  callbackResolve=resolve;
+});
+  //如果不执行 callbackResolve，后面的log 代码就被暂停了
+   console.log("in");
+}
+redireact();
+callbackResolve();
+```

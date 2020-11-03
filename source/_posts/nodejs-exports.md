@@ -14,7 +14,7 @@ var exports = module.exports;
 于是我们可以直接在 exports 对象上添加方法，表示对外输出的接口，如同在module.exports上添加一样。注意，不能直接将exports变量指向一个值，因为这样等于切断了exports与module.exports的联系。
 
 # 不同于CommonJS，ES6使用 export 和 import 来导出、导入模块。
-```
+```js
 // profile.js
 var firstName = 'Michael';
 var lastName = 'Jackson';
@@ -40,7 +40,7 @@ export default 中 default 相当于 export 之后的一个接口名称，因此
 
 加载方式
 
-```
+```js
 import * from ‘./test’
 import { key, key1, key2 } from ‘./test’
 
@@ -65,7 +65,7 @@ var common = require(’./test’)
 看下面的例子就很清晰了：
 
 CommonJS规范下值拷贝
-```
+```js
 // calculator.js
 var count = 0;
 module.exports = {

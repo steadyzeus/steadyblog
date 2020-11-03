@@ -5,12 +5,12 @@ categories:
   - css3
 date: 2018-11-23 03:28:00
 ---
-# 使用 mix-blend-mode: screen 滤色模式制作 loading 效果
+# 1.使用 mix-blend-mode: screen 滤色模式制作 loading 效果
 <iframe title="mix-blend-mode: screen" src="https://codepen.io/Chokcoco/embed/zwPyWj/?height=265&amp;theme-id=0&amp;default-tab=css,result&amp;embed-version=2" frameborder="no" scrolling="no" width="750" height="365"></iframe>
 
 更多：https://www.cnblogs.com/coco1s/p/6829372.html
 
-# 选择器
+# 2.选择器
 选择第一个类名： .exerciseInfo: nth-of-type(1) { ... };
 
 选择最后一个类名： .exerciseInfo: last-child { ... };
@@ -20,7 +20,7 @@ date: 2018-11-23 03:28:00
   (<a href='https://codepen.io/steadyzeus'>@steadyzeus</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
 
-# 使用object-fit规定图像尺寸
+# 3.使用object-fit规定图像尺寸
 
 要点：通过object-fit使图像脱离background-size的约束，使用<img>来标记图像背景尺寸
 
@@ -30,7 +30,7 @@ date: 2018-11-23 03:28:00
 </iframe>
 
 
-# iCSS：布局】使用transform描绘1px边框
+# 4.iCSS：布局】使用transform描绘1px边框
 
 //从左上角开始缩放，不然是从右下角开始
 transform: scale(.5);
@@ -42,7 +42,7 @@ transform-origin: left top;
 </iframe>
 
 
-# css中“~”（波浪号）、“，”（逗号）、 “ + ”（加号）和 “ > ”（大于号）是什么意思？
+# 5.css中“~”（波浪号）、“，”（逗号）、 “ + ”（加号）和 “ > ”（大于号）是什么意思？
 
 
 
@@ -84,7 +84,17 @@ p~ul 选择前面有 <p> 元素的每个 <ul> 元素。“~”的定义和用�
 　　这个选择器读作：“选择紧接在 h1 元素后出现的段落，h1 和 p 元素拥有共同的父元素”。｝；
   ```
   
-# animation-direction：定义是否循环交替反向播放动画。
+# 6.ease,seae-in,ease-in-out,ease-out
+css 动画中 ease,seae-in,ease-in-out,ease-out,效果区别
+linear	规定以相同速度开始至结束的过渡效果（等于 cubic-bezier(0,0,1,1)）。(匀速)
+ease	规定慢速开始，然后变快，然后慢速结束的过渡效果（cubic-bezier(0.25,0.1,0.25,1)）（相对于匀速，中间快，两头慢）。
+ease-in	规定以慢速开始的过渡效果（等于 cubic-bezier(0.42,0,1,1)）（相对于匀速，开始的时候慢，之后快）。
+ease-out	规定以慢速结束的过渡效果（等于 cubic-bezier(0,0,0.58,1)）（相对于匀速，开始时快，结束时候间慢，）。
+ease-in-out	规定以慢速开始和结束的过渡效果（等于 cubic-bezier(0.42,0,0.58,1)）（相对于匀速，（开始和结束都慢）两头慢）。
+cubic-bezier(n,n,n,n)	在 cubic-bezier 函数中定义自己的值。可能的值是 0 至 1 之间的数值。
+  
+  
+# 7.animation-direction：定义是否循环交替反向播放动画。
 
 normal	默认值。动画按正常播放。
 reverse	动画反向播放。
@@ -110,7 +120,7 @@ animation-direction
 animation-play-state: running | paused 检索或设置对象动画的状态，running为默认值
 
 
-# animation-fill-mode 使用
+# 8.animation-fill-mode 使用
 
 
 首先，你要明白动画分为 初始状态 等待期 动画执行期 完成期 四个阶段。
@@ -159,7 +169,7 @@ backwards 表示等待期为第一帧样式，完成期跳转为初始样式
 forwards 表示等待期保持初始样式，完成期间保持最后一帧样式。
 
 
-# CSS3 filter
+# 9.CSS3 filter
 
 grayscale灰度
 sepia褐色（求专业指点翻译）

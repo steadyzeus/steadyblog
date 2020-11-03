@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Steady'blog
 subtitle:
 description:
 keywords:
-author: John Doe
+author: Steady
 language:
 timezone:
 
@@ -74,11 +74,13 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 #theme: landscape
-theme: archer
+theme: ayer
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type:git
+  repo:git@github.com:steadyzeus/steadyzeus.github.io.git
+  branch:master
 
 
 jsonContent:
@@ -105,3 +107,19 @@ admin:
   username: steady
   password_hash: $2a$10$FYYDv70DJ2Mg58eaQx9utOUT4OVar1Tv4ZOjBgHh2wQy1VKL1yyxy
   secret: zeus
+
+	
+search:
+  path: search.xml
+  field: post
+  format: html
+
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
+    hub:
+    content:
+    content_limit: 140
+    content_limit_delim: ' '
+    order_by: -date

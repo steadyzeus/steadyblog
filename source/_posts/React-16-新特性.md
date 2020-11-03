@@ -5,7 +5,7 @@ tags:
 ---
 ###  useEffect, useState, useCallback,Suspense
 
-```
+```js
 import React, { useState, useCallback, Suspense } from "react";
 import ReactDOM from "react-dom";
 import "./styles.css";
