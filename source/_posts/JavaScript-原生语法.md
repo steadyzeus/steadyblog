@@ -10,7 +10,7 @@ e.preventDefault()阻止事件默认行为。
 e.stopPropagation()阻止事件冒泡
 
 # 屏蔽tmall的广告下载
-``` bash
+``` js
 var links=document.getElementsByTagName('div');
 for(var i=0;i<links.length;i++){  
   if( links[i].style.zIndex=="99999"){ 
@@ -87,7 +87,7 @@ foo(3);
 
 # 闭包
 #示例二展示了一个我们工作中常见的场景，我们预期的值应该是0,1,2..实际结果都输出了最后一次循环的值。原因是这里的i我们是在window下声明可以，当我们调用funs数组中的方法时，循环已经结束i的值已经变成了5。们可以用闭包来解决这个问题：
-```
+``` js
 var funs = []
 var i=0
 for(; i<5; i++) {
@@ -102,4 +102,3 @@ funs[1]() // 1
 funs[2]() // 2
 ```
 我们声明了一个parent函数并立即调用了它，把i当做参数传入作为parent的部变量，并在child函数中调用i形成了一个闭包。
-
